@@ -23,4 +23,4 @@ In rare cases, the docker terminal can become unresponsive. To stop all running 
 
 ## Development
 
-To develop using docker, simply replace the pre-existing `/catkin_ws/src/docker_sample` directory with a filesystem mountpoint and start a shell rather than the ROS node (`docker run -i -t -v $(pwd):/catkin_ws/src/ expeditions/docker_sample /bin/bash`). You may now use a system editor to modify the project and the docker terminal to compile/test your code.
+To develop using docker, simply replace the pre-existing `/catkin_ws/src/docker_sample` directory with a filesystem mountpoint and start a shell rather than the ROS node (`docker run -i -t --net=host -v $(pwd):/catkin_ws/src/ expeditions/docker_sample /bin/bash`). You may now use a system editor to modify the project and the docker terminal to compile/test your code.
