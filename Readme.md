@@ -7,7 +7,7 @@ This is an example ROS indigo/catkin application that is packaged using docker. 
 ## Filesystem Structure
 
 This container copies the project folder to `/catkin_ws/src/docker_sample`. `catkin_make` is
-then called from /catkin_ws to build the project. After the build successfully completes, the application executable is located in `/catkin_ws/devel/lib/docker_sample/docker_sample_node.
+then called from `/catkin_ws` to build the project. After the build successfully completes, the application executable is located in `/catkin_ws/devel/lib/docker_sample/docker_sample_node`.
 
 ## Building
 
